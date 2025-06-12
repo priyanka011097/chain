@@ -27,7 +27,7 @@ const PageTitle: React.FC<PageTitleProps> = ({
 }) => {
     return (
         <>
-        <style>{`
+            <style>{`
         .page-title-section {
           width: 100%;
           height: 100vh;
@@ -121,17 +121,18 @@ const PageTitle: React.FC<PageTitleProps> = ({
 
             <section className="page-title-section">
                 {/* Tag at top */}
-                <div className="page-title-tag">
-                    <button className="tag-button">{topbutton}</button>
-                </div>
-
+                {topbutton && (
+                    <div className="page-title-tag">
+                        <button className="tag-button">{topbutton}</button>
+                    </div>
+                )}
                 {/* Main content */}
                 <div className="content-container">
                     <h1 className="main-title">
                         {title1} <span className="highlight-text">{highlight1}</span> {title2} <br />
                         {subtitle1}  <span className="highlight-text">{highlight2}</span> {subtitle2}
                     </h1>
-            
+
 
                     <p className="subtitle">{text}</p>
 
