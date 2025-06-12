@@ -1,5 +1,9 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
+import logo from '../assets/logo.png';
+import whatsappLogo from '../assets/whatsapp.png';
+import twitterLogo from '../assets/twitter.png';
+
 
 const Header = () => {
   const location = useLocation();
@@ -72,7 +76,7 @@ const Header = () => {
   return (
     <header style={styles.header}>
       <div style={styles.logo}>
-        <img src="src/assets/logo.png" alt="Chainsecurity Logo" style={styles.logoImg} />
+        <img src={logo} alt="Chainsecurity Logo" style={styles.logoImg} />
         
       </div>
 
@@ -96,13 +100,13 @@ const Header = () => {
           style={getCircleBtnStyle(isWhatsAppClicked)}
           onClick={() => setIsWhatsAppClicked(!isWhatsAppClicked)}
         >
-          <img src="src/assets/whatsapp.png" alt="WhatsApp Logo" style={styles.icon} />
+          <img src={whatsappLogo} alt="WhatsApp logo in green and white, circular icon representing messaging app, displayed on a dark themed website header" style={styles.icon} />
         </button>
         <button
           style={getCircleBtnStyle(isTwitterClicked)}
           onClick={() => setIsTwitterClicked(!isTwitterClicked)}
         >
-          <img src="src/assets/twitter.png" alt="Twitter Logo" style={styles.icon} />
+          <img src={twitterLogo} alt="Twitter logo in blue and white, circular icon representing social media platform, displayed on a dark themed website header, no visible text, neutral tone" style={styles.icon} />
         </button>
       </div>
     </header>
