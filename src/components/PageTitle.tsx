@@ -62,7 +62,7 @@ const PageTitle: React.FC<PageTitleProps> = ({
         .content-container {
           text-align: center;
           padding: 0 16px;
-          max-width: 42rem;
+          max-width: 60rem;
           z-index: 10;
         }
 
@@ -80,7 +80,7 @@ const PageTitle: React.FC<PageTitleProps> = ({
         .subtitle {
           font-size: 14px;
           color: #D1D5DB;
-          margin-bottom: 322px;
+          margin-bottom: 422px;
           line-height: 1.5;
         }
 
@@ -100,18 +100,11 @@ const PageTitle: React.FC<PageTitleProps> = ({
           transition: background-color 0.2s ease;
         }
 
-        .primary-button:hover {
-          background-color: #E5E7EB;
-        }
 
         .secondary-button {
           font-size: 14px;
           text-decoration: underline;
           transition: color 0.2s ease;
-        }
-
-        .secondary-button:hover {
-          color: #9CA3AF;
         }
 
         @media (min-width: 768px) {
@@ -151,7 +144,7 @@ const PageTitle: React.FC<PageTitleProps> = ({
                             )}
                             {secondaryButton && (
                                 <button className="secondary-button">
-                                    {secondaryButton} →
+                                    {secondaryButton}
                                 </button>
                             )}
                         </div>
