@@ -67,8 +67,8 @@ const PageTitle: React.FC<PageTitleProps> = ({
         }
 
         .main-title {
-          font-size: 30px;
-          font-weight: 700;
+          font-size: 45px;
+          font-weight: 600;
           margin-bottom: 16px;
           line-height: 1.2;
         }
@@ -121,6 +121,7 @@ const PageTitle: React.FC<PageTitleProps> = ({
           
           .subtitle {
             font-size: 16px;
+            font-weight: 400;
           }
         }
       `}</style>
@@ -134,11 +135,10 @@ const PageTitle: React.FC<PageTitleProps> = ({
                 {/* Main content */}
                 <div className="content-container">
                     <h1 className="main-title">
-                        {title1} <span className="highlight-text">{highlight1}</span> {title2}
-                    </h1>
-                    <h1 className="main-title">
+                        {title1} <span className="highlight-text">{highlight1}</span> {title2} <br />
                         {subtitle1}  <span className="highlight-text">{highlight2}</span> {subtitle2}
                     </h1>
+            
 
                     <p className="subtitle">{text}</p>
 
