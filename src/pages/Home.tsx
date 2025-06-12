@@ -1,5 +1,6 @@
 import FloatingCard from "../components/FlotingImageCard";
 import PageTitle from "../components/PageTitle";
+import ThreeCard from "../components/ThreeCards";
 
 const Home = () => {
   return (
@@ -25,6 +26,8 @@ const Home = () => {
         subtitle1="blockchain safer"
         text="Enjoy a more private and secure internet, block malicious websites, stop web trackers, and monitor your data leaks all in one app."
       />
+
+      <ThreeCard />
 
       <PageTitle primaryButton="See All Features" />
       <PageTitle
