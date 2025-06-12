@@ -38,12 +38,12 @@ const FloatingCard: React.FC<FloatingCardProps> = ({
           max-width: 50%;
         }
 
-        .highlight-text {
+        .floatingimgcard-highlight-text {
           color: #9CA3AF;
           font-size: 14px;
         }
 
-        .main-title {
+        .floatingimgcard-title {
           font-size: 40px;
           font-weight: 600;
           line-height: 1.2;
@@ -84,8 +84,8 @@ const FloatingCard: React.FC<FloatingCardProps> = ({
       <section className="floating-card-section">
         {/* Left side text */}
         <div className="text-content">
-          <h1 className="main-title">
-            <span className="highlight-text">{highlight1}</span> <br />
+          <h1 className="floatingimgcard-title">
+            <span className="floatingimgcard-highlight-text">{highlight1}</span> <br />
             {title1}
             <br />
             {subtitle1}

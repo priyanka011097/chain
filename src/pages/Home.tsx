@@ -1,6 +1,7 @@
 import FloatingCard from "../components/FlotingImageCard";
 import PageTitle from "../components/PageTitle";
 import ThreeCard from "../components/ThreeCards";
+import TwoCard from "../components/TwoCards";
 
 const Home = () => {
   return (
@@ -43,6 +44,9 @@ const Home = () => {
         subtitle1="technology company"
         text="Specializes in developing blockchain analytics tools and investigating crypto fraud incidents worldwide."
       />
+
+      <TwoCard />
+
       <PageTitle
         title1="Our Unique Approach to Global"
         subtitle1="Compliance"

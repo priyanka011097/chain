@@ -4,13 +4,13 @@ import card1 from "../assets/card-1.png";
 import card2 from "../assets/card-2.png";
 import card3 from "../assets/card-3.png";
 
-interface CardProps {
+interface ThreeCardProps {
   icon: string;
   title: string;
   description: string;
 }
 
-const Card: React.FC<CardProps> = ({ icon, title, description }) => {
+const Card: React.FC<ThreeCardProps> = ({ icon, title, description }) => {
   return (
     <div className="three-card">
       <img src={cardbackground} alt="Card background" className="card-bg" />
