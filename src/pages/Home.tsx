@@ -41,7 +41,7 @@ const cards2 = [
     title: "Global Compliance & Localization",
     description:
       "We adapt our services to local legal frameworks and market specifics, enabling smooth operations with clients and partners across the globe.",
-    iconClass: "bag-icon-large",
+    iconClass: "bag-icon-large gradient-bg",
   },
   {
     icon: bag,

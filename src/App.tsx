@@ -8,6 +8,7 @@ import Bholder from './pages/Bholder';
 import RiskScore from './pages/RiskScore';
 import About from './pages/About';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/riskscore" element={<RiskScore />} />
         <Route path="/about" element={<About />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
