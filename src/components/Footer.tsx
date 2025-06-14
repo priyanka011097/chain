@@ -9,6 +9,37 @@ const Footer = () => {
   const [isWhatsAppClicked, setIsWhatsAppClicked] = useState(false);
   const [isTwitterClicked, setIsTwitterClicked] = useState(false);
 
+  const footerLinks = [
+    {
+      heading: "QUICK LINKS",
+      links: [
+        { name: "ALL TIME RANKINGS", path: "/all-time-rankings" },
+        { name: "DAILY RANKING", path: "/daily-ranking" },
+        { name: "NEW LISTINGS", path: "/new-listing" },
+        { name: "SUBMIT COIN", path: "/submit-coin" },
+        { name: "UPDATE REQUEST", path: "/update-request" },
+      ],
+    },
+    {
+      heading: "LEGAL",
+      links: [
+        { name: "OFFICIAL VERIFICATION", path: "/verification" },
+        { name: "PRIVACY POLICY", path: "/privacy-policy" },
+        { name: "TERMS OF SERVICE", path: "/terms" },
+        { name: "COOKIES POLICY", path: "/cookie-policy" },
+      ],
+    },
+    {
+      heading: "QUICK LINKS",
+      links: [
+        { name: "CONTACT US", path: "/contact" },
+        { name: "SERVICES", path: "/service" },
+        { name: "ADVERTISE", path: "/advertise" },
+        { name: "BLOG", path: "/blog" },
+      ],
+    },
+  ];
+
   const getCircleBtnStyle = (clicked: boolean) => ({
     backgroundColor: clicked ? "#303030" : "#ffffff",
     border: "none",
@@ -100,6 +131,13 @@ const Footer = () => {
 
   return (
     <footer>
+      <style>
+        {`
+      .footer-link:hover {
+        color: #FF8629 !important;
+      }
+    `}
+      </style>
       <div style={styles.topBorder} />
       <div style={styles.footer}>
         <div style={styles.topSection}>
@@ -112,56 +150,21 @@ const Footer = () => {
             </p>
           </div>
 
-          <div style={styles.column}>
-            <span style={styles.heading}>QUICK LINKS</span>
-            <a href="/all-time-rankings" style={styles.link}>
-              ALL TIME RANKINGS
-            </a>
-            <a href="/daily-ranking" style={styles.link}>
-              DAILY RANKING
-            </a>
-            <a href="/new-listing" style={styles.link}>
-              NEW LISTINGS
-            </a>
-            <a href="/submit-coin" style={styles.link}>
-              SUBMIT COIN
-            </a>
-            <a href="/update-request" style={styles.link}>
-              UPDATE REQUEST
-            </a>
-          </div>
-
-          <div style={styles.column}>
-            <span style={styles.heading}>LEGAL</span>
-            <a href="verification" style={styles.link}>
-              OFFICIAL VERIFICATION
-            </a>
-            <a href="/privacy-policy" style={styles.link}>
-              PRIVACY POLICY
-            </a>
-            <a href="/terms" style={styles.link}>
-              TERMS OF SERVICE
-            </a>
-            <a href="/cookie-policy" style={styles.link}>
-              COOKIES POLICY
-            </a>
-          </div>
-
-          <div style={styles.column}>
-            <span style={styles.heading}>QUICK LINKS</span>
-            <a href="/contact" style={styles.link}>
-              CONTACT US
-            </a>
-            <a href="/service" style={styles.link}>
-              SERVICES
-            </a>
-            <a href="/advertise" style={styles.link}>
-              ADVERTISE
-            </a>
-            <a href="/blog" style={styles.link}>
-              BLOG
-            </a>
-          </div>
+          {footerLinks.map((section) => (
+            <div key={section.heading} style={styles.column}>
+              <span style={styles.heading}>{section.heading}</span>
+              {section.links.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.path}
+                  style={styles.link}
+                  className="footer-link"
+                >
+                  {link.name}
+                </a>
+              ))}
+            </div>
+          ))}
         </div>
       </div>
 

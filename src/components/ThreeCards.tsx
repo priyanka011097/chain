@@ -72,9 +72,9 @@ const ThreeCard: React.FC<ThreeCardProps> = ({ cards }) => {
           display: flex;
           gap: 24px;
           justify-content: center;
-          padding: 40px 80px;
+          padding: 30px 80px;
           flex-wrap: wrap;
-          align-items: center;
+          align-items: end;
         }
 
        .three-card-wrapper {
@@ -154,7 +154,7 @@ const ThreeCard: React.FC<ThreeCardProps> = ({ cards }) => {
           margin-bottom: 12px;
           margin-top: 0;
           text-align: left;
-          width: 100%;
+          width: 90%;
         }
 
         .card-description {

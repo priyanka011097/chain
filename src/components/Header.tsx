@@ -56,11 +56,12 @@ const Header = () => {
       gap: '2rem',
     },
     navLink: {
-      color: 'white',
+      color: '#ccc',
       textDecoration: 'none',
       fontWeight: 100,
     },
     activeLink: {
+      color: '#ffffff',
       fontWeight: 600,
     },
     actions: {

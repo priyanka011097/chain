@@ -1,52 +1,52 @@
-import React from 'react';
+import React from "react";
 
 interface PageTitleProps {
-    topbutton?: string;
-    title1?: string;
-    title2?: string;
-    highlight1?: string;
-    highlight2?: string;
-    subtitle1?: string;
-    subtitle2?: string;
-    text?: string;
-    primaryButton?: string;
-    secondaryButton?: string;
+  topbutton?: string;
+  title1?: string;
+  title2?: string;
+  highlight1?: string;
+  highlight2?: string;
+  subtitle1?: string;
+  subtitle2?: string;
+  text?: string;
+  primaryButton?: string;
+  secondaryButton?: string;
 }
 
 const PageTitle: React.FC<PageTitleProps> = ({
-    topbutton,
-    title1,
-    title2,
-    highlight1,
-    highlight2,
-    subtitle1,
-    subtitle2,
-    text,
-    primaryButton,
-    secondaryButton,
+  topbutton,
+  title1,
+  title2,
+  highlight1,
+  highlight2,
+  subtitle1,
+  subtitle2,
+  text,
+  primaryButton,
+  secondaryButton,
 }) => {
-    return (
-        <>
-            <style>{`
+  return (
+    <>
+      <style>{`
         .page-title-section {
           width: 100%;
-          height: 100vh;
           background-color: #000;
           color: #fff;
           display: flex;
           align-items: center;
-          justify-content: center;
-          position: relative;
+          flex-direction: column;
+          margin-bottom: 50px;
+          // position: relative;
         }
 
-        .page-title-tag {
-          position: absolute;
-          top: 24px;
-          left: 10;
-          right: 10;
-          display: flex;
-          justify-content: center;
-        }
+        // .page-title-tag {
+        //   position: absolute;
+        //   top: 24px;
+        //   left: 10;
+        //   right: 10;
+        //   display: flex;
+        //   justify-content: center;
+        // }
 
         .tag-button {
           color: #ffffff;
@@ -54,8 +54,7 @@ const PageTitle: React.FC<PageTitleProps> = ({
           border: 1px solid #9CA3AF;
           border-radius: 9999px;
           font-size: 14px;
-          background: #272732;
-;
+          background: #272732;;
           backdrop-filter: blur(4px);
         }
 
@@ -80,8 +79,9 @@ const PageTitle: React.FC<PageTitleProps> = ({
         .subtitle {
           font-size: 14px;
           color: #D1D5DB;
-          margin-bottom: 422px;
           line-height: 1.5;
+          width: 70%;
+          margin: auto;
         }
 
         .buttons-container {
@@ -98,6 +98,7 @@ const PageTitle: React.FC<PageTitleProps> = ({
           font-size: 14px;
           font-weight: 500;
           transition: background-color 0.2s ease;
+          cursor: pointer;
         }
 
 
@@ -105,6 +106,7 @@ const PageTitle: React.FC<PageTitleProps> = ({
           font-size: 14px;
           text-decoration: underline;
           transition: color 0.2s ease;
+          cursor: pointer;
         }
 
         @media (min-width: 768px) {
@@ -119,41 +121,45 @@ const PageTitle: React.FC<PageTitleProps> = ({
         }
       `}</style>
 
-            <section className="page-title-section">
-                {/* Tag at top */}
-                {topbutton && (
-                    <div className="page-title-tag">
-                        <button className="tag-button">{topbutton}</button>
-                    </div>
-                )}
-                {/* Main content */}
-                <div className="content-container">
-                    <h1 className="main-title">
-                        {title1} <span className="highlight-text">{highlight1}</span> {title2} <br />
-                        {subtitle1}  <span className="highlight-text">{highlight2}</span> {subtitle2}
-                    </h1>
+      <section className="page-title-section">
+        {/* Tag at top */}
+        {topbutton && (
+          <div className="page-title-tag">
+            <button className="tag-button">{topbutton}</button>
+          </div>
+        )}
+        {/* Main content */}
+        <div className="content-container">
+          {(title1 ||
+            title2 ||
+            highlight1 ||
+            highlight2 ||
+            subtitle1 ||
+            subtitle2) && (
+            <h1 className="main-title">
+              {title1} <span className="highlight-text">{highlight1}</span>{" "}
+              {title2} <br />
+              {subtitle1} <span className="highlight-text">{highlight2}</span>{" "}
+              {subtitle2}
+            </h1>
+          )}
 
+          <p className="subtitle">{text}</p>
 
-                    <p className="subtitle">{text}</p>
-
-                    {(primaryButton || secondaryButton) && (
-                        <div className="buttons-container">
-                            {primaryButton && (
-                                <button className="primary-button">
-                                    {primaryButton}
-                                </button>
-                            )}
-                            {secondaryButton && (
-                                <button className="secondary-button">
-                                    {secondaryButton}
-                                </button>
-                            )}
-                        </div>
-                    )}
-                </div>
-            </section>
-        </>
-    );
+          {(primaryButton || secondaryButton) && (
+            <div className="buttons-container">
+              {primaryButton && (
+                <button className="primary-button">{primaryButton}</button>
+              )}
+              {secondaryButton && (
+                <button className="secondary-button">{secondaryButton}</button>
+              )}
+            </div>
+          )}
+        </div>
+      </section>
+    </>
+  );
 };
 
 export default PageTitle;

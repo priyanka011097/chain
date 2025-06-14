@@ -2,11 +2,16 @@ import FloatingCard from "../components/FlotingImageCard";
 import PageTitle from "../components/PageTitle";
 import ThreeCard from "../components/ThreeCards";
 import TwoCard from "../components/TwoCards";
+import ImageText from "../components/ImageText";
 
 import icon1 from "../assets/card-1.png";
 import icon2 from "../assets/card-2.png";
 import icon3 from "../assets/card-3.png";
 import bag from "../assets/bag.png";
+
+import imgText1 from "../assets/imgText1.png";
+import imgText2 from "../assets/imgText2.png";
+import imgText3 from "../assets/imgText3.png";
 
 const cards = [
   {
@@ -52,7 +57,6 @@ const cards2 = [
   },
 ];
 
-
 const Home = () => {
   return (
     <>
@@ -87,6 +91,34 @@ const Home = () => {
         subtitle1="Chainsecurity?"
         text="We build long-term relationships with publishers and influencers"
       />
+
+      <ImageText
+        imageLink={imgText1}
+        topbutton="Blockchain Address"
+        title1="Check blockchain address using Btrace"
+        text="In seconds, determine the risk level of the counterparty’s address, find out the source of his funds and make an informed decision about interacting with him"
+        primaryButton="FIRST CHECK FREE"
+        imageLeftorRight="left"
+      />
+
+      <ImageText
+        imageLink={imgText2}
+        topbutton="Blockchain Address"
+        title1="Check blockchain address using Btrace"
+        text="In seconds, determine the risk level of the counterparty’s address, find out the source of his funds and make an informed decision about interacting with him"
+        primaryButton="FIRST CHECK FREE"
+        imageLeftorRight="right"
+      />
+
+      <ImageText
+        imageLink={imgText3}
+        topbutton="Blockchain Address"
+        title1="Check blockchain address using Btrace"
+        text="In seconds, determine the risk level of the counterparty’s address, find out the source of his funds and make an informed decision about interacting with him"
+        primaryButton="FIRST CHECK FREE"
+        imageLeftorRight="left"
+      />
+
       <PageTitle
         title1="Chain Security is"
         highlight1="An"
