@@ -55,13 +55,13 @@ const FourPointer: React.FC<FourPointerProps> = ({ cards }) => {
           flex-wrap: wrap;
           gap: 25px;
           justify-content: center;
-          padding: 30px 80px;
+          padding: 30px 50px;
         }
 
         .choose-card-wrapper {
           position: relative;
-          width: 550px;
-          height: 100%;
+          width: 450px;
+          height: 70%;
           display: flex;
           align-items: flex-start;
           justify-content: center;

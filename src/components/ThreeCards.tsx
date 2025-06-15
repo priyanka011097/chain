@@ -78,7 +78,7 @@ const ThreeCard: React.FC<ThreeCardProps> = ({ cards }) => {
 
        .three-card-wrapper {
           position: relative;
-          width: 398px;
+          width: 360px;
           min-height: 100%;
           margin: 0px;
         }
