@@ -37,7 +37,6 @@ const Header = () => {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-between',
-      backgroundColor: '#000000',
       padding: '74px 79px',
       color: 'white',
     },

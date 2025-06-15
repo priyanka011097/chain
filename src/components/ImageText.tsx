@@ -36,7 +36,6 @@ const ImageText: React.FC<ImageTextProps> = ({
       <style>{`
         .page-title-section-imgtext {
           width: 100%;
-          background-color: #000;
           color: #fff;
           display: flex;
           align-items: left;

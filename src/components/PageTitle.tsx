@@ -30,7 +30,6 @@ const PageTitle: React.FC<PageTitleProps> = ({
       <style>{`
         .page-title-section {
           width: 100%;
-          background-color: #000;
           color: #fff;
           display: flex;
           align-items: center;
