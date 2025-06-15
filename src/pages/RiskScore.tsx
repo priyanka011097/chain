@@ -1,5 +1,6 @@
 import PageTitle from "../components/PageTitle";
 import ThreeCard from "../components/ThreeCards";
+import ImageTextOnBg from "../components/ImageTextOnBG";
 
 import bag from "../assets/bag.png";
 
@@ -39,6 +40,15 @@ const RiskScore = () => {
       />
 
       <PageTitle primaryButton="Get Consultation" />
+
+      <ImageTextOnBg
+        topbutton="Risk Score API"
+        highlight1="Various"
+        title1="Investment Funds And Private Investors Are Increasingly"
+        highlight2="Considering"
+        title2="Blockchain Projects As Potential Investment Objects."
+        text="They look at the history of the blockchain project, infrastructure, community, token holders and exchanges that trade this or that token. They are interested in transparency, understanding the distribution of tokens and the availability of tools that will reduce the impact of regulatory risks on the project."
+      />
 
       <PageTitle
         title1="We Offer A Comprehensive Approach To"
