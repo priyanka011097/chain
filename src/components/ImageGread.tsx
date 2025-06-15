@@ -118,7 +118,7 @@ const ImageGread: React.FC<ImageGreadListProps> = ({ cards }) => {
           flex-wrap: wrap;
           align-items: center;
           gap: 20px;
-          padding: 10px 140px;
+          padding: 10px 120px;
           margin-bottom: 200px;
         }
       `}</style>

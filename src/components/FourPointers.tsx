@@ -53,14 +53,14 @@ const FourPointer: React.FC<FourPointerProps> = ({ cards }) => {
         .choose-card-section {
           display: flex;
           flex-wrap: wrap;
-          gap: 30px;
+          gap: 25px;
           justify-content: center;
           padding: 30px 80px;
         }
 
         .choose-card-wrapper {
           position: relative;
-          width: 450px;
+          width: 550px;
           height: 100%;
           display: flex;
           align-items: flex-start;
@@ -129,14 +129,14 @@ const FourPointer: React.FC<FourPointerProps> = ({ cards }) => {
         }
 
         .choose-card-icon {
-          width: 40px;
-          height: 40px;
+          width: 34px;
+          height: 34px;
         }
 
         .choose-card-title {
           color: white;
-          font-size: 16px;
-          font-weight: 500;
+          font-size: 20px;
+          font-weight: 300;
           margin: 0;
           flex: 1;
         }

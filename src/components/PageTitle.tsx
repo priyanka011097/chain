@@ -56,6 +56,7 @@ const PageTitle: React.FC<PageTitleProps> = ({
           font-size: 14px;
           background: #272732;;
           backdrop-filter: blur(4px);
+          font-weight: 500px;
         }
 
         .content-container {
@@ -70,6 +71,7 @@ const PageTitle: React.FC<PageTitleProps> = ({
           font-weight: 600;
           margin-bottom: 16px;
           line-height: 1.2;
+          font-family: "Archivo", sans-serif;
         }
 
         .highlight-text {
@@ -77,7 +79,7 @@ const PageTitle: React.FC<PageTitleProps> = ({
         }
 
         .subtitle {
-          font-size: 14px;
+          font-size: 16px;
           color: #D1D5DB;
           line-height: 1.5;
           width: 70%;
@@ -111,7 +113,7 @@ const PageTitle: React.FC<PageTitleProps> = ({
 
         @media (min-width: 768px) {
           .main-title {
-            font-size: 48px;
+            font-size: 45px;
           }
           
           .subtitle {

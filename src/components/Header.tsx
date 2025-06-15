@@ -58,11 +58,11 @@ const Header = () => {
     navLink: {
       color: '#ccc',
       textDecoration: 'none',
-      fontWeight: 100,
+      fontWeight: 500,
     },
     activeLink: {
       color: '#ffffff',
-      fontWeight: 600,
+      fontWeight: 700,
     },
     actions: {
       display: 'flex',

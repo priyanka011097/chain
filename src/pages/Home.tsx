@@ -87,10 +87,10 @@ const Home = () => {
     <>
       <PageTitle
         topbutton="Chain Security"
-        title1="Check your crypto"
-        subtitle1="walet-protect"
-        highlight2="your"
-        subtitle2="funds!"
+        title1="Check Your Crypto"
+        subtitle1="Walet-Protect"
+        highlight2="Your"
+        subtitle2="Funds!"
         text="Chain Security is a technology company, speakers at leading industry exhibitions on blockchain technologies, big data and information security, investigations of crypto fraud cases around the world."
       />
 
@@ -102,15 +102,15 @@ const Home = () => {
 
       <PageTitle
         highlight1="Chainsecurity"
-        title2="tools make"
-        subtitle1="blockchain safer"
+        title2="Tools Make"
+        subtitle1="Blockchain Safer"
         text="Enjoy a more private and secure internet, block malicious websites, stop web trackers, and monitor your data leaks all in one app."
       />
 
       <ThreeCard cards={cards} />
 
       <PageTitle primaryButton="See All Features" />
-      
+
       <PageTitle
         highlight1="Why"
         title2="Choose"
