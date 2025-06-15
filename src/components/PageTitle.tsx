@@ -89,7 +89,7 @@ const PageTitle: React.FC<PageTitleProps> = ({
           display: flex;
           justify-content: center;
           gap: 16px;
-        }
+        } 
 
         .primary-button {
           padding: 12px 24px;
@@ -105,9 +105,12 @@ const PageTitle: React.FC<PageTitleProps> = ({
 
         .secondary-button {
           font-size: 14px;
-          text-decoration: underline;
-          transition: color 0.2s ease;
+          text-decoration: none;
           cursor: pointer;
+          background: transparent; 
+          border: none;            
+          color: #fff;            
+          padding: 0;
         }
 
         @media (min-width: 768px) {
@@ -137,13 +140,13 @@ const PageTitle: React.FC<PageTitleProps> = ({
             highlight2 ||
             subtitle1 ||
             subtitle2) && (
-            <h1 className="main-title">
-              {title1} <span className="highlight-text">{highlight1}</span>{" "}
-              {title2} <br />
-              {subtitle1} <span className="highlight-text">{highlight2}</span>{" "}
-              {subtitle2}
-            </h1>
-          )}
+              <h1 className="main-title">
+                {title1} <span className="highlight-text">{highlight1}</span>{" "}
+                {title2} <br />
+                {subtitle1} <span className="highlight-text">{highlight2}</span>{" "}
+                {subtitle2}
+              </h1>
+            )}
 
           <p className="subtitle">{text}</p>
 

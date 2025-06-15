@@ -87,9 +87,11 @@ const Btrace = () => {
       <PageTitle
         topbutton="Btrace"
         title1="Checking a crypto wallet for "
-        highlight1="“dirty”"
-        title2="Money will allow"
+        subtitle1="Connection With"
+        highlight2="“dirty”"
+        subtitle2="Money will allow"
         primaryButton="Check Crypto Wallet"
+        secondaryButton="About Us  >"
       />
 
       <FourPointer cards={cardList} />
