@@ -1,10 +1,7 @@
 import PageTitle from "../components/PageTitle";
 import ThreeCard from "../components/ThreeCards";
-import ImageText from "../components/ImageText";
 
 import bag from "../assets/bag.png";
-import bholderimg1 from "../assets/bholder-img1.png";
-import bholderimg2 from "../assets/bholder-img2.png";
 
 const cards2 = [
   {
