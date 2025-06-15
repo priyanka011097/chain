@@ -3,6 +3,7 @@ import PageTitle from "../components/PageTitle";
 import ThreeCard from "../components/ThreeCards";
 import TwoCard from "../components/TwoCards";
 import ImageText from "../components/ImageText";
+import FourPointer from "../components/FourPointers";
 
 import icon1 from "../assets/card-1.png";
 import icon2 from "../assets/card-2.png";
@@ -57,6 +58,30 @@ const cards2 = [
   },
 ];
 
+const cardList = [
+  {
+    icon: bag,
+    title: "Assess the risks of interaction with an address",
+    active: true,
+    iconClass: "bag-icon-large-4pointer gradient-bg",
+  },
+  {
+    icon: bag,
+    title: "Set sources of crypto funds on the address",
+    iconClass: "bag-icon-large-4pointer ",
+  },
+  {
+    icon: bag,
+    title: "Track the movement of stolen crypto assets",
+    iconClass: "bag-icon-large-4pointer ",
+  },
+  {
+    icon: bag,
+    title: "Explore de-anonymized addresses in the graph of connections",
+    iconClass: "bag-icon-large-4pointer ",
+  },
+];
+
 const Home = () => {
   return (
     <>
@@ -85,12 +110,15 @@ const Home = () => {
       <ThreeCard cards={cards} />
 
       <PageTitle primaryButton="See All Features" />
+      
       <PageTitle
         highlight1="Why"
         title2="Choose"
         subtitle1="Chainsecurity?"
         text="We build long-term relationships with publishers and influencers"
       />
+
+      <FourPointer cards={cardList} />
 
       <ImageText
         imageLink={imgText1}
